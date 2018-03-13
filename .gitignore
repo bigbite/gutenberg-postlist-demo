@@ -1,0 +1,27 @@
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+
+# Environment
+.env
+.vagrant
+.idea
+.vscode
+.imdone
+.imdoneignore
+*.sublime-workspace
+*.sublime-project
+
+
+# Task Runner
+node_modules
+*.map
+.sass-cache
+npm-debug.log
+yarn.lock

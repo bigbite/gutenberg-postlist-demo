@@ -1,0 +1,172 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-bigbite-postlist {
+  border: 1px solid #e2e4e7;
+
+  .title-wrapper {
+	padding: 10px;
+  }
+
+  .post-selector {
+	//margin-top: 24px;
+	//background-color: #fafafa;
+  }
+
+  .post-selectorHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: #f7f7f7;
+	margin-bottom: 10px;
+  }
+
+  .post-selectorHeader .searchbox label,
+  .post-selectorHeader .searchbox {
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+  }
+
+  .post-selectorHeader .searchbox svg {
+	width: 25px;
+	height: 25px;
+	fill: #777;
+  }
+
+  .post-selectorHeader input {
+	width: 100%;
+	margin-left: 8px;
+  }
+
+  .post-selectorHeader input,
+  .post-selectorHeader select {
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+	border-radius: 0;
+	padding: 8px;
+	font-size: 18px;
+	border: none;
+	box-shadow: none;//0 1px 3px 2px rgba(0, 0, 0, .08);
+	max-height: none;
+	height: auto;
+	background-color: transparent;
+	transition: all .25s ease-in-out;
+	border-bottom: 2px solid transparent;
+  }
+
+  .post-selectorHeader select {
+	//border: 1px solid #999;
+	margin-left: 14px;
+	background-color: #fff;
+  }
+
+  .post-selectorHeader input:focus {
+	box-shadow: none;
+	border-bottom: 2px solid #0eb5d6;
+	//box-shadow: 1px 1px 5px 1px rgba(30,140,190, .23);
+  }
+
+  .post {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 8px;
+  }
+
+  .post-figure {
+	width: 50px;
+	height: 50px;
+	flex-basis: 50px;
+	flex-shrink: 0;
+	background-color: #eee;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	margin-right: 16px;
+  }
+
+  .post-title {
+	margin: 0;
+	line-height: 1;
+	margin-bottom: 4px;
+	font-size: 18px;
+  }
+
+  .post-meta {
+	font-size: 14px;
+	font-style: italic;
+	color: rgb(85, 93, 102);
+  }
+
+  .post-selectorContainer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5px;
+	padding: 0 10px;
+  }
+
+  .post-list {
+	flex-basis: 48.5%;
+	max-height: 200px;
+	height: 200px;
+	overflow-y: auto;
+  }
+
+  .post button {
+	position: absolute;
+	top: 50%;
+	right: 5px;
+	opacity: 0;
+	z-index: -999;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	border: none;
+	border-radius: 50%;
+	box-shadow: 1px 1px 5px 1px rgba(#333, .23);
+
+	transform: translate(0, -50%);
+  }
+
+  .post:hover button {
+	opacity: 1;
+	z-index: 100;
+  }
+
+  .post-list > button {
+	background-color: #0eb5d6;
+	width: 100%;
+	padding: 12px 18px;
+	font-size: 14px;
+	font-weight: 500;
+	border: none;
+	color: #fff;
+	margin-bottom: 8px;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+	transition: all .25s ease-in-out;
+  }
+
+  .post-list > button:not([disabled]):hover,
+  .post-list > button:not([disabled]):focus,
+  .post-list > button:not([disabled]):active {
+	background-color: #009CBD;
+  }
+
+  .post-list > button[disabled] {
+	opacity: .7;
+  }
+
+  .blocks-plain-text {
+	line-height: 1.8;
+	font-size: 1.6em;
+	font-weight: 600;
+  }
+}

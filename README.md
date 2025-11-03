@@ -1,1 +1,1 @@
-This is the Post List selector example built in this blog post: [link here]
+This is the Post List selector example built in this blog post on how to create an advanced Gutenberg block. See here for the full tutorial: https://bigbite.net/2018/03/14/creating-advanced-block-gutenberg/
